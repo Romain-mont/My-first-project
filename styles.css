@@ -1,0 +1,431 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Lato", sans-serif;
+    width: 100%;
+}
+
+h1, h2, h3 {
+    font-family: "Raleway", sans-serif;
+    font-weight: 700;
+    color: #5A3E36;
+    margin: 0;
+}
+
+p {
+    font-weight: 400;
+    font-style: normal;
+    color: #5A3E36;
+}
+
+.presentation {
+    background-color: #F6E5D9;
+    width: 100%;
+    height: 80vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.moi {
+    background-color: #C26D2D;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-right: -50px;
+    box-shadow: 0px 0px 5px 7px rgba(0, 0, 0, 0.5);
+}
+
+.upper-part {
+    background-color: #C26D2D;
+    width: 100%;
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    padding-bottom: 0px;
+    box-sizing: border-box;
+}
+
+.lower-part {
+    background-color: white;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.moi img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.moi h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white; 
+}
+
+.moi hr {
+    width: 80%;
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+
+.moi p {
+    text-align: center;
+    margin-top: 35px;
+    color: white;
+
+}
+
+.social {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.about {
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items:  center;
+    margin-left: -100px;
+  
+}
+
+.about p {
+    font-size: 20px;
+}
+
+.carre {
+    margin-top: 20px;
+}
+
+.carre button {
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #5A3E36;
+    color: white;
+    cursor: pointer;
+}
+
+.carre button:hover {
+    background-color: #C26D2D;
+}
+
+span:hover{
+    cursor: pointer;
+}
+
+.social a:hover {
+    transform: scale(1.1);
+}
+
+.diplome {
+    background-color: #D9EAF6;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.diplome h2 {
+    margin-top: 30px;
+    margin-bottom: 120px;
+    font-size: 50px;
+}
+
+.bi{
+    margin-right: 25px;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 100px 600px;
+    grid-template-rows: 150px 150px 150px;
+    gap: 10px; 
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: auto; 
+    padding-bottom: 100px;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid white;
+    padding: 10px;
+    text-align: center;
+    background-color: #104870;
+}
+
+.item p {
+    color: white;
+    margin: 0;
+}
+.item span svg {
+    margin: auto;
+}
+
+  
+.experience {
+    background-color: #F6E5D9;
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .cartes-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+  }
+  
+  .carte {
+    width: 200px;
+    height: 300px;
+    perspective: 1000px;
+    position: relative;
+    margin-bottom: 20px;
+
+  }
+  
+  .face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.6s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  
+  .face-front {
+    background-color: #C26D2D;
+    transform: rotateY(0deg);
+  }
+  
+  .face-back {
+    background-color: #C26D2D;
+    transform: rotateY(180deg);
+  }
+  
+  .carte:hover .face-front {
+    transform: rotateY(-180deg);
+  }
+  
+  .carte:hover .face-back {
+    transform: rotateY(0deg);
+  }
+  
+  .carte h2 {
+    color: white;
+    margin: 0;
+    font-size: 35px;
+    height: 50px;
+    display: flex;
+    align-items: center; 
+  }
+  
+  .face img {
+    width: 80%;
+    height: auto;
+    border-radius: 10%;
+    margin-top: 10px; 
+    min-height: 100px; 
+  }
+  
+  #casino{
+    margin-bottom: 40px;
+  }
+  .experience h2 {
+    margin-top: 30px;
+    margin-bottom: 150px;
+}
+.face-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .face-content h2 {
+    margin-bottom: auto;
+  }
+  
+  .face-content img {
+    margin-top: auto; 
+  }
+
+ul {
+  padding: 0; 
+}
+
+li {
+  color: #5A3E36;
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.highlight{
+    color: white;
+}
+
+@media (max-width: 1090px) {
+  .presentation {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+  .moi {
+      margin-right: 0;
+  }
+  .about {
+      margin-left: 0;
+      margin-top: 20px;
+      width: 100%;
+      text-align: center;
+  }
+  .cartes-container {
+      flex-direction: column;
+      align-items: center;
+  }
+  .carte {
+      margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .presentation h2 {
+      font-size: 40px;
+      margin-bottom: 15px;
+  }
+  .presentation p {
+      font-size: 18px;
+      margin: 15px;
+  }
+  .diplome h2 {
+      font-size: 40px;
+      margin-bottom: 80px;
+  }
+  .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto-fill, minmax(100px, 1fr));
+      max-width: 100%;
+      padding: 10px;
+  }
+  .item {
+      flex-direction: column;
+      padding: 20px;
+  }
+  .item span svg {
+      margin-bottom: 10px;
+  }
+  .experience h2 {
+      font-size: 40px;
+      margin-bottom: 100px;
+  }
+  .carte {
+      width: 180px;
+      height: 280px;
+  }
+  .carte h2 {
+      font-size: 30px;
+  }
+  .face {
+      font-size: 18px;
+  }
+  .cartes-container {
+      gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .presentation h2 {
+      font-size: 30px;
+      margin-bottom: 10px;
+  }
+  .presentation p {
+      font-size: 16px;
+      margin: 10px;
+  }
+  .diplome h2 {
+      font-size: 30px;
+      margin-bottom: 50px;
+  }
+  .container {
+      padding: 5px;
+  }
+  .item {
+      padding: 10px;
+  }
+  .item span svg {
+      width: 30px;
+      height: 30px;
+  }
+  .item p {
+      font-size: 14px;
+  }
+  .experience h2 {
+      font-size: 30px;
+      margin-bottom: 50px;
+  }
+  .carte {
+      width: 150px;
+      height: 250px;
+  }
+  .carte h2 {
+      font-size: 25px;
+  }
+  .face {
+      font-size: 16px;
+      padding: 15px;
+  }
+  .face img {
+      width: 70%;
+      min-height: 80px;
+  }
+  .cartes-container {
+      gap: 10px;
+  }
+}
